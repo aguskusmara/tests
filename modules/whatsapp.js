@@ -1,3 +1,8 @@
+Array.prototype.find = function(...args){
+  let index = this.findIndex(...args)
+  if(index >= 0) return index >= 0 ? this[index] : void 0
+}
+
 //w2api - Version 0.0.2
 global.openWA = require('@open-wa/wa-automate');
 const fs = require('fs');
